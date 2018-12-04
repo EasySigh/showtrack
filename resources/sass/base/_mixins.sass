@@ -1,0 +1,25 @@
+@import 'general_variables'
+
+// Mixin for quick include fonts
+=font-face($font-family, $file-path, $font-weight, $font-style: normal)
+  @font-face
+    font-family: $font-family
+    src: url('#{$file-path}.eot')
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.ttf') format('truetype')
+    font-weight: $font-weight
+    font-style: $font-style
+
+// Short font family for quick include
+=font-light
+  font-family: "Source-Light", $font-family-sans-serif
+=font-regular
+  font-family: "Source-Regular", $font-family-sans-serif
+=font-semibold
+  font-family: "Source-Semibold", $font-family-sans-serif
+=font-bold
+  font-family: "Source-Black", $font-family-sans-serif
+
+// Short x alignment at center
+=mx
+  margin-left: auto
+  margin-right: auto

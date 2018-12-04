@@ -1,0 +1,21 @@
+// default font size (1rem = $html-font-size)
+html
+  font-size: $html-font-size
+  body
+    +font-regular
+
+//Add fonts
++font-face("Source-Light","../fonts/SourceSansPro-Light", 300, normal)
++font-face("Source-Regular","../fonts/SourceSansPro-Regular", 400, normal)
++font-face("Source-Semibold","../fonts/SourceSansPro-Semibold", 500, normal)
++font-face("Source-Black","../fonts/SourceSansPro-Black", 700, normal)
+
+//Create classes
+.light
+  +font-light
+.regular
+  +font-regular
+.bold
+  +font-bold
+.semibold
+  +font-semibold

@@ -1,0 +1,37 @@
+// Generate classes: order from 1 to 5 [.order-$]
+@for $i from 1 to 5
+  .order-#{$i}
+    order: $i
+
+//Generate classes: order-(xs-xl)-(1-5)
+@each $screen, $proportion in $grid-breakpoints
+  // Don't generate anything for 'xs' size.
+  @if($screen == 'xs')
+    null
+  @else
+    @media (min-width: #{$proportion})
+      @each $size, $width in $sizes
+        .w-#{$screen}-#{$size}
+          width: $width !important
+      @for $i from 1 to 5
+        .order-#{$screen}-#{$i}
+          order: $i
+
+.nowrap
+  white-space: nowrap
+
+.list-unstyled
+  padding-left: 0
+  margin-left: 0
+  li
+    list-style-type: none
+
+.link-unstyled
+  display: inline
+  color: inherit
+  &:hover
+    text-decoration: none
+    color: inherit
+
+.lsmall
+  font-size: 14px

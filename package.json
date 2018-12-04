@@ -1,0 +1,33 @@
+{
+  "name": "ShowTrack",
+  "version": "1.0.0",
+  "description": "Simple landing created for practice only.",
+  "main": "resources/js/app.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "dev": "webpack-dev-server --watch --progress --colors --mode development",
+    "prod": "webpack --mode production"
+  },
+  "author": "Tatarciuc Denis",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.10.0",
+    "popper.js": "^1.14.5",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "slick-carousel": "^1.8.1"
+  }
+}

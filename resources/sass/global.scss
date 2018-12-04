@@ -1,0 +1,23 @@
+// general variables and colors
+@import "base/general_variables.scss";
+
+// base
+@import "base/basic";
+@import "base/mixins";
+@import "base/typography";
+@import "base/assets";
+
+// pages
+@import "pages/home_page";
+
+
+// components
+// @import "components/tabs";
+@import "components/forms";
+
+// modules
+@import "modules/header";
+// @import "modules/footer";
+
+// responsive
+@import "responsive/responsive";

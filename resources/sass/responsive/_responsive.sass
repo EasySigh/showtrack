@@ -1,0 +1,27 @@
+// Vars instead full expression
+$sm-up: 'min-width: 576px'
+$md-up: 'min-width: 768px'
+$lg-up: 'min-width: 992px'
+$xl-up: 'min-width: 1200px'
+
+$xs-down: 'max-width: 575.98px'
+$sm-down: 'max-width: 767.98px'
+$md-down: 'max-width: 991.98px'
+$lg-down: 'max-width: 1199.98px'
+
+
+@media ($lg-down)
+	.home
+		.section
+			&--track
+				background-image: url('/img/bg/track-bg-small.png')
+
+@media ($xs-down)
+	.home
+		.section
+			&--track
+				.title
+					font-size: 4rem
+				.subtitle
+					font-size: 1.8rem
+					+font-regular
